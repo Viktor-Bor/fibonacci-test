@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.input-container input {
+    font-size: 25px;
+    margin: 10px 20px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.list li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.fibonacci-item{
+    color: red;
+}
+
+#button-counter {
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.input-container:hover > #button-counter{
+    transform: translateX(10px);
+    transition: 0.5s;
+    opacity: 1;
+}
